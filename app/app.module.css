@@ -5,6 +5,7 @@
   flex: auto;
   display: flex;
 }
+
 .graph {
   flex: auto;
 }
@@ -14,28 +15,35 @@
   stroke-dasharray: 5 5;
 }
 
+/* Key Colors */
 .prereq {
-  --ball-color: #fee2e2;
+  --ball-color: #f5e9ff; /* light LSU purple */
 }
+
 .blocking {
-  --ball-color: #dbeafe;
+  --ball-color: #ede7f6; /* muted lavender */
 }
+
 .directPrereq {
-  --ball-color: #fca5a5;
+  --ball-color: #7c4dff; /* brighter purple accent */
 }
+
 .directCoreq {
-  --ball-color: #fdba74;
+  --ball-color: #ffe8a3; /* soft LSU gold */
 }
+
 .directStrictCoreq {
-  --ball-color: #fde047;
+  --ball-color: #fdd023; /* LSU gold */
 }
+
 .directBlocking {
-  --ball-color: #93c5fd;
+  --ball-color: #7b9acc; /* subdued blue */
 }
 
 .square {
   border-radius: 5px;
 }
+
 .triangleShape {
   display: none;
   position: absolute;
@@ -44,6 +52,7 @@
   height: 40px;
   z-index: -1;
 }
+
 .triangle {
   background-color: transparent !important;
   border: 0;
@@ -59,19 +68,25 @@
 
 .options {
   color-scheme: dark;
-  background-color: #0f172a;
-  color: #f1f5f9;
+  background-color: #2b1948; /* LSU-inspired deep purple */
+  color: #f9fafb;
+
   display: flex;
   flex-direction: column;
   padding: 20px;
   gap: 10px;
   overflow-y: auto;
+
   flex: none;
   width: 330px;
 
-  & h2,
+  & h2 {
+    color: #fdd023; /* LSU gold headings */
+  }
+
   & p {
     margin: 0;
+    color: #e5e7eb;
   }
 }
 
@@ -87,19 +102,24 @@
   align-items: center;
   gap: 10px;
 }
+
 .keyCourse {
   display: flex;
-  border: 1px solid #64748b;
-  background-color: var(--ball-color, #e2e8f0);
+  border: 1px solid #461d7c;
+  background-color: var(--ball-color, #ede7f6);
+
   width: 20px;
   height: 20px;
+
   border-radius: 50%;
   box-sizing: border-box;
 }
+
 .line {
   display: flex;
   width: 95px;
   flex: none;
-  height: 1px;
-  background-color: #64748b;
+  height: 2px;
+
+  background-color: #fdd023; /* LSU gold */
 }
