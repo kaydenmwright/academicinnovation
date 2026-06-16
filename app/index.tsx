@@ -101,8 +101,73 @@ const majorSubject = params.get('major')?.slice(0, 2) ?? ''
 const department = majorToDept[majorSubject] ?? ''
 
 function getStats (courseName: string): CourseStats {
+  const nameToCode: Record<string, string> = {
+    'Principles of Microeconomics': 'ECON2000',
+    'English Composition I': 'ENGL1001',
+    'College Algebra': 'MATH1021',
+    'Introductory Financial Accounting': 'ACCT2001',
+    'Introduction to Management Information Systems for Business Majors': 'ISDS1102',
+    'Calculus with Business and Economic Applications': 'MATH1431',
+    'Principles of Macroeconomics': 'ECON2010',
+    'Business Statistics and Analytics I': 'ISDS2000',
+    'Introductory Managerial Accounting': 'ACCT2101',
+    'Money, Banking and Macroeconomic Activity': 'ECON2035',
+    'English Composition II': 'ENGL2000',
+    'Business Statistics and Analytics II': 'ISDS2001',
+    'Intermediate Accounting Part I': 'ACCT3001',
+    'Accounting Analytics': 'ACCT3025',
+    'Principles of Finance': 'FIN3716',
+    'Introduction to Operations Management': 'ISDS3115',
+    'Intermediate Accounting Part II': 'ACCT3021',
+    'Cost Analysis and Control': 'ACCT3121',
+    'Business Law': 'BLAW3201',
+    'Principles of Management': 'MGT3200',
+    'Principles of Marketing': 'MKT3401',
+    'Accounting Information Systems': 'ACCT3122',
+    'Income Tax Accounting I': 'ACCT3221',
+    'Advanced Accounting': 'ACCT4022',
+    'Governmental and Not-for-Profit Accounting': 'ACCT4421',
+    'Commercial Transactions for Accountants': 'BLAW4203',
+    'Auditing': 'ACCT3222',
+    'Audit Analytics': 'ACCT4244',
+    'Strategic Management': 'MGT3830'
+  }
+
+function getStats (courseName: string): CourseStats {
+  const nameToCode: Record<string, string> = {
+    'Principles of Microeconomics': 'ECON2000',
+    'English Composition I': 'ENGL1001',
+    'College Algebra': 'MATH1021',
+    'Introductory Financial Accounting': 'ACCT2001',
+    'Introduction to Management Information Systems for Business Majors': 'ISDS1102',
+    'Calculus with Business and Economic Applications': 'MATH1431',
+    'Principles of Macroeconomics': 'ECON2010',
+    'Business Statistics and Analytics I': 'ISDS2000',
+    'Introductory Managerial Accounting': 'ACCT2101',
+    'Money, Banking and Macroeconomic Activity': 'ECON2035',
+    'English Composition II': 'ENGL2000',
+    'Business Statistics and Analytics II': 'ISDS2001',
+    'Intermediate Accounting Part I': 'ACCT3001',
+    'Accounting Analytics': 'ACCT3025',
+    'Principles of Finance': 'FIN3716',
+    'Introduction to Operations Management': 'ISDS3115',
+    'Intermediate Accounting Part II': 'ACCT3021',
+    'Cost Analysis and Control': 'ACCT3121',
+    'Business Law': 'BLAW3201',
+    'Principles of Management': 'MGT3200',
+    'Principles of Marketing': 'MKT3401',
+    'Accounting Information Systems': 'ACCT3122',
+    'Income Tax Accounting I': 'ACCT3221',
+    'Advanced Accounting': 'ACCT4022',
+    'Governmental and Not-for-Profit Accounting': 'ACCT4421',
+    'Commercial Transactions for Accountants': 'BLAW4203',
+    'Auditing': 'ACCT3222',
+    'Audit Analytics': 'ACCT4244',
+    'Strategic Management': 'MGT3830'
+  }
+
   const match = courseName.toUpperCase().match(/([A-Z]+) *(\d+[A-Z]*)/)
-  const courseCode = match ? match[1] + match[2] : ''
+  const courseCode = match ? match[1] + match[2] : nameToCode[courseName] ?? ''
   const dfwRates = dfwRatesByMajor[courseCode]
   const transferGaps = transferEquityGap[courseCode] ?? {}
   const equityGaps = equityGapsByMajor[courseCode] ?? {}
