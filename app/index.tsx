@@ -138,35 +138,6 @@ function getStats (courseName: string): CourseStats {
   const dfwRates = dfwRatesByMajor[courseCode]
   const transferGaps = transferEquityGap[courseCode] ?? {}
   const equityGaps = equityGapsByMajor[courseCode] ?? {}
-
-  return {
-    dfw: dfwRates?.[department] ?? dfwRates?.allMajors ?? null,
-    dfwForDepartment: dfwRates?.[department] !== undefined,
-    equityGaps: [
-      ...(equityGaps[department] !== undefined
-        ? equityGaps[department]
-          ? equityGaps[department].split(' ')
-          : []
-        : equityGaps.allMajors
-          ? equityGaps.allMajors.split(' ')
-          : []),
-      ...((transferGaps[department] !== undefined
-        ? transferGaps[department]
-        : transferGaps.allMajors)
-        ? ['transfer']
-        : [])
-    ],
-    equityGapsForDepartment: equityGaps?.[department] !== undefined,
-    frequency: (frequencies as Record<string, string[]>)[courseCode] ?? null,
-    waitlist: (waitlists as Record<string, number>)[courseCode] ?? null
-  }
-}
-
-  const match = courseName.toUpperCase().match(/([A-Z]+) *(\d+[A-Z]*)/)
-  const courseCode = match ? match[1] + match[2] : nameToCode[courseName] ?? ''
-  const dfwRates = dfwRatesByMajor[courseCode]
-  const transferGaps = transferEquityGap[courseCode] ?? {}
-  const equityGaps = equityGapsByMajor[courseCode] ?? {}
   return {
     dfw: dfwRates?.[department] ?? dfwRates?.allMajors ?? null,
     dfwForDepartment: dfwRates?.[department] !== undefined,
