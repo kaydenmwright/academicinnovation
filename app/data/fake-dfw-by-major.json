@@ -1,146 +1,22 @@
 {
-  "Principles of Microeconomics": {
+  "ECON2000": {
     "AC26": 0.094,
     "allMajors": 0.094
   },
-  "English Composition I": {
+  "ENGL1001": {
     "AC26": 0.038,
     "allMajors": 0.038
   },
-  "College Algebra": {
+  "MATH1021": {
     "AC26": 0.142,
     "allMajors": 0.142
   },
-  "Natural Science": {
-    "AC26": 0.087,
-    "allMajors": 0.087
-  },
-  "Humanities": {
-    "AC26": 0.041,
-    "allMajors": 0.041
-  },
-  "Introductory Financial Accounting": {
+  "ACCT2001": {
     "AC26": 0.118,
     "allMajors": 0.118
   },
-  "Introduction to Management Information Systems for Business Majors": {
-    "AC26": 0.072,
-    "allMajors": 0.072
-  },
-  "Calculus with Business and Economic Applications": {
-    "AC26": 0.132,
-    "allMajors": 0.132
-  },
-  "Oral and Written Communication Requirement 1": {
-    "AC26": 0.035,
-    "allMajors": 0.035
-  },
-  "Principles of Macroeconomics": {
-    "AC26": 0.086,
-    "allMajors": 0.086
-  },
-  "Business Statistics and Analytics I": {
-    "AC26": 0.104,
-    "allMajors": 0.104
-  },
-  "Introductory Managerial Accounting": {
-    "AC26": 0.097,
-    "allMajors": 0.097
-  },
-  "Oral and Written Communication Requirement 2": {
-    "AC26": 0.033,
-    "allMajors": 0.033
-  },
-  "Money, Banking and Macroeconomic Activity": {
-    "AC26": 0.119,
-    "allMajors": 0.119
-  },
-  "English Composition II": {
-    "AC26": 0.044,
-    "allMajors": 0.044
-  },
-  "Business Statistics and Analytics II": {
-    "AC26": 0.091,
-    "allMajors": 0.091
-  },
-  "Arts": {
-    "AC26": 0.036,
-    "allMajors": 0.036
-  },
-  "Natural Sciences": {
-    "AC26": 0.089,
-    "allMajors": 0.089
-  },
-  "Intermediate Accounting Part I": {
-    "AC26": 0.156,
-    "allMajors": 0.156
-  },
-  "Accounting Analytics": {
-    "AC26": 0.082,
-    "allMajors": 0.082
-  },
-  "Principles of Finance": {
-    "AC26": 0.128,
-    "allMajors": 0.128
-  },
-  "Introduction to Operations Management": {
-    "AC26": 0.076,
-    "allMajors": 0.076
-  },
-  "Intermediate Accounting Part II": {
-    "AC26": 0.149,
-    "allMajors": 0.149
-  },
-  "Cost Analysis and Control": {
-    "AC26": 0.088,
-    "allMajors": 0.088
-  },
-  "Business Law": {
-    "AC26": 0.064,
-    "allMajors": 0.064
-  },
-  "Principles of Management": {
-    "AC26": 0.057,
-    "allMajors": 0.057
-  },
-  "Principles of Marketing": {
-    "AC26": 0.069,
-    "allMajors": 0.069
-  },
-  "Accounting Information Systems": {
-    "AC26": 0.112,
-    "allMajors": 0.112
-  },
-  "Income Tax Accounting I": {
-    "AC26": 0.103,
-    "allMajors": 0.103
-  },
-  "Advanced Accounting": {
-    "AC26": 0.121,
-    "allMajors": 0.121
-  },
-  "Governmental and Not-for-Profit Accounting": {
-    "AC26": 0.093,
-    "allMajors": 0.093
-  },
-  "Commercial Transactions for Accountants": {
-    "AC26": 0.071,
-    "allMajors": 0.071
-  },
-  "Elective": {
-    "AC26": 0.05,
-    "allMajors": 0.05
-  },
-  "Auditing": {
-    "AC26": 0.134,
-    "allMajors": 0.134
-  },
-  "Audit Analytics": {
-    "AC26": 0.079,
-    "allMajors": 0.079
-  },
-  "Strategic Management": {
-    "AC26": 0.084,
-    "allMajors": 0.084
+  "ACCT3001": {
+    "AC26": 0.356,
+    "allMajors": 0.356
   }
 }
